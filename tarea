@@ -1,0 +1,22 @@
+// miguel andresvm.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+   void main()
+  
+   {  int sueldo,sueldobase,impuesto;
+   printf("ingrese el monto del sueldo");
+   scanf("%d",&sueldo);
+   printf("ingrese sueldobase:");
+   scanf("%d",&sueldobase);
+   if(sueldo>2*sueldobase)
+     impuesto=sueldo*0.13;
+   else
+
+     impuesto=0;
+
+   printf("El impuesto a pagar es: %f",impuesto);
+   system( "pause");
