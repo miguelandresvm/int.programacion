@@ -1,0 +1,24 @@
+// miguel andresvm.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+int areacuadrado (int lado);
+using namespace std;
+
+int main ()
+{
+        int lado,area;
+        cout<<"Ingrese lado del cuadrado: ";
+        cin>>lado;
+        area=areacuadrado(lado);
+        cout<<"El area es: "<<area<<"";
+        getch ();
+        return 0;
+}
+int areacuadrado (int lado)
+{ 
+        int area;
+        area=lado*lado;
+        return area;
+}
