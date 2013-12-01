@@ -1,0 +1,32 @@
+// miguel andres.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+void main(void)
+{
+ int N,r,Dig,S,Pot;
+ cout<< "N:\n";
+ cin>>N;
+ cout<<"r:\n";
+ cin>>r;
+ Pot=1;
+ Dig=0;
+ S=0;
+while(N!=0)
+ {
+  Dig=N%10; 
+  S=S+Dig*Pot;
+  Pot=Pot*r;
+  N=N/10;
+
+ }
+
+cout<<"S:\n"<<S <<endl;
+
+getch();
+
+}
