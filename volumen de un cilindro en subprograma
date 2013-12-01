@@ -1,0 +1,25 @@
+// miguel andresvm.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+float volcilindro (float radio, float altura);
+using namespace std;
+int main ()
+{
+        float radio,altura,volumen;
+        cout<<"ingrese radio:";
+		cin>>radio;
+        cout<<"ingrese altura:";
+		cin>>altura;
+        volumen=volcilindro(radio,altura);
+        cout<<"el volumen es:" <<volumen;
+        getch ();
+        return 0;
+}
+float volcilindro (float radio, float altura)
+{ float v=3.141516*radio*radio*altura;
+  return v;
+}
