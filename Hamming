@@ -1,0 +1,37 @@
+// velasco.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+   int N,i,j,cnt;
+   string a,b;
+   cout<<"Ingrese cuantas comparaciones desea realizar: ";
+   cin>>N;
+   cout<<endl;
+   for(i=0;i<N;i++)
+   {
+          cout<<"Ingrese el primer numero: ";
+      cin>>a;
+          cout<<"Ingrese el segundo numero: ";
+          cin>>b;
+      cnt=0;
+      for(j=0;j<a.length();j++ )
+      {
+         if(a[j]!=b[j])
+            cnt ++;
+      }
+          cout<<endl;
+      cout<<"El numero de digitos que cambia de posicion es: "<<cnt<<"";
+          cout<<endl;
+          
+   }
+   getch();
+   return 0;
+}
