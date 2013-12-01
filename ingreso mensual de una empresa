@@ -1,0 +1,22 @@
+// miguelandresvm.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+        float a,b,c,it;
+        cout<< "Ingrese ventas prod.A por semana: ";
+        cin>> a;        
+        cout<< "Ingrese ventas prod.B por semana: ";
+        cin>> b;        
+        cout<< "Ingrese ventas prod.C por semana: ";
+        cin>> c;
+        it=(a+b+c)*4;
+        cout<< "El ingreso totaL del mes de la empresa es: ";
+        cout<< it;
+        getch ();
+        return 0;
+}
