@@ -1,0 +1,39 @@
+// miguelandresvm.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+        float g,h,t,c1,c2,s=0,pt,iac,p,a,sh=0;
+        cout<<"Ingrese la cantidad de granjas: ";
+        cin>>g;
+        cout<<endl;
+        for (c1=1;c1<=g;c1++)
+        {
+                cout<<"Ingrese la cantidad de huevos por granja: ";
+                cin>>h;
+                sh=sh+h;
+                for(c2=1;c2<=h;c2++)
+                {
+                        do
+                        {
+                                cout<<"Ingrese el tamanho del huevo"<<c2<<": ";
+                cin>>t;
+                s=s+t;
+                        }
+                        while(t<0 || t>15);
+        }
+                pt=(s/sh)/h;
+        if (t>5)
+        pt=pt*5;
+        else 
+                pt=pt*4;
+        }
+        cout<<endl;
+        cout<<"El costo promedio de los huevos sera: "<<pt<<"";
+        getch();        
+        return 0;
+}
