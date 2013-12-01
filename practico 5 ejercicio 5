@@ -1,0 +1,31 @@
+// miguel andres.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+float dia,mes,anho;    
+cout<<"ingrese dia ";
+cin>> dia;
+cout<<"Ingrese mes ";
+cin>> mes;
+cout<<"Ingrese anho ";
+cin>> anho;
+if ((dia>=21 && mes==9)||(mes==10)||(mes==11)||(dia<=20 && mes==12))
+   cout<< "es primavera";
+else 
+	if ((dia>=21 && mes==12)||(mes==1)||(mes==2)||(dia<=20 && mes==3))
+   cout<< "es verano";
+else if ((dia>=21 && mes==3)||(mes==4)||(mes==5)||(dia<=20 && mes==6))
+   cout<< "es otonho";
+else 
+	if ((dia>=21 && mes==6)||(mes==7)||(mes==8)||(dia<=20 && mes==9))
+   cout<<"es invierno";
+
+getch ();
+
+}
