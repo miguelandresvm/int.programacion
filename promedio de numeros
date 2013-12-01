@@ -1,0 +1,30 @@
+/ miguelandresvm.cpp : Defines the entry point for the console application.
+//
+
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        int n;
+        float a, p, j, S;
+
+        cout<< "ingrese cuantos datos desea promediar: ";
+        cin>> n;
+        S=0;
+        for(j=1; j<=n; j++)
+        {
+                cout<< "ingrese datos: ";
+                cin>> a;
+                S=S+a;
+        }        
+        p=S/n;
+        cout<< "Promedio es: "<<p;
+        getch ();
+
+        return 0;
+}
