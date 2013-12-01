@@ -1,0 +1,54 @@
+// miguelandresvm.cpp : Defines the entry point for the console application.
+//
+
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+long invertir( long a );
+
+int main()
+{
+        int N, i, cnt;
+   long d, e;
+
+   cout<<"ingrese el numero entero N: ";
+   cin >> N;
+   for( i=0; i<N; i++ )
+   {
+           cout<<"ingrese el numero: ";
+      cin >> d;
+      cnt = 0;
+      while( cnt < 100 )
+      {
+         e = invertir( d );
+         if( d == e )
+         {
+           cout<<"el numero es: " << d << endl;
+            break;
+         } else
+            d = d + e;
+         cnt ++;
+      }
+      if( cnt == 100 )
+         cout << "imposible" << endl;
+   }
+
+        return 0;
+}
+
+long invertir( long d )
+{
+   long aux = 0;
+   while( d > 0 )
+   {
+      aux = aux*10 + d%10;
+      d = d / 10;
+   }
+   return aux;
+   _getch();
+
+}
