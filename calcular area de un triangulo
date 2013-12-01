@@ -1,0 +1,27 @@
+// miguel.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+
+int main()
+{
+	float b,h,a;
+
+	cout<<"introduce base:"; 
+	cin>>b;
+	cout<<"introduce altura:"; 
+	cin>>h;
+
+     a=((b*h)/2); 
+    cout<<"el area es: ";
+    cout<<a;
+
+    getch();
+	return 0;
+}
+
